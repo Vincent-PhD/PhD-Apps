@@ -4,7 +4,7 @@ import pandas as pd
 import time
 import streamlit as st
 
-# Streamlit Program
+# Streamlit Dynamic LLT App
 
 st.title('Linear Lifting Line Wing Performance Calculator')
 
