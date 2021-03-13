@@ -1,0 +1,1 @@
+web: sh setup.sh && streamlit run Basic-Linear-Lifting-Line-Code-Streamlit-App-v1.py
