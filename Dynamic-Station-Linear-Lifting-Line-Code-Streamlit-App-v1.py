@@ -4,7 +4,7 @@ import pandas as pd
 import time
 import streamlit as st
 
-# Streamlit Dynamic LLT App
+# Streamlit Program
 
 st.title('Linear Lifting Line Wing Performance Calculator')
 
@@ -298,6 +298,12 @@ st.write(f'Wing efficiency: {np.round(Wing_efficiency*100,2)} %')
 st.write(f'Wing dimensionless lift: {np.round(Wing_Lift,5)}')
 st.write(f'Wing dimensionless induced drag: {np.round(Wing_Induced_Drag,5)}')
 
+
+print(f'Total wing stations: {np.round(Number_of_stations,0)}')
+print(f'Wing efficiency: {np.round(Wing_efficiency*100,2)} %')
+print(f'Wing dimensionless lift: {np.round(Wing_Lift,5)}')
+print(f'Wing dimensionless induced drag: {np.round(Wing_Induced_Drag,5)}')
+
 # Calculate span wise lift distribution
 
 Local_Wing_Lift = []
@@ -367,4 +373,3 @@ plt.ylabel('Lift Distribution')
 plt.title('Wing Lift Distribution')
 plt.legend()
 st.pyplot(fig)
-
